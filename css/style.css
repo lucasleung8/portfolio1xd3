@@ -1,0 +1,169 @@
+#container {
+    background-color: rgb(229, 209, 255);
+}
+
+body {
+    font-family: Inter, Arial, sans-serif;
+    margin: 0px;
+    transition: 1s;
+}
+
+p,
+ul {
+    margin: 3%;
+    font-size: large;
+    line-height: 150%;
+}
+
+h1,
+h2 {
+    margin: 3%;
+}
+
+#navbar {
+    display: flex;
+    font-size: 18px;
+    justify-content: space-evenly;
+}
+
+.navbutton {
+    padding: 15px;
+    background-color: rgb(139, 97, 255);
+    width: 25%;
+    margin: 1%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+#header {
+    text-align: center;
+    background-color: rgb(182, 137, 255);
+    display: flex;
+    margin: 2%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2)
+}
+
+#header img {
+    width: 15%;
+    padding: 1%;
+}
+
+#header h1 {
+    font-size: 55px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#headerBtns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.btn {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+#tiles {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.tile {
+    text-align: center;
+    background-color: rgb(182, 137, 255);
+    border-radius: 5px;
+    padding-bottom: 2%;
+    border-radius: 5px;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+
+#works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.work {
+    background-color: rgb(139, 97, 255);
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    gap: 10px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+span.technologies {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, violet, magenta);
+}
+
+#footer {
+    background-color: rgb(196, 109, 255);
+    padding: 2%;
+    margin-top: 2%;
+    text-align: center;
+}
+
+@media (max-width:1246px) {
+    #header h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 860px) {
+
+    #works {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    #header {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 15px;
+    }
+
+    #header img {
+        width: 25%;
+    }
+
+    #headerBtns {
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(147, 53, 255);
+    }
+
+    #tiles {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navbutton {
+        width: 95%;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+
+/* 2 ways of handling horizontal/vertical flexboxes
+    media query -> flex-direction: column;
+    flex-wrap:
+*/
